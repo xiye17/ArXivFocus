@@ -1,0 +1,38 @@
+
+// popup.html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .keyword-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .controls {
+      display: flex;
+      gap: 10px;
+    }
+    #keywordList {
+      margin-top: 10px;
+    }
+    .keyword-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="keyword" class="keyword-input" placeholder="Enter keyword to filter">
+  <div class="controls">
+    <button id="addKeyword">Add Keyword</button>
+    <button id="toggleVisibility">Show Hidden Papers</button>
+  </div>
+  <div id="keywordList"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

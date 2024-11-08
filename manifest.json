@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "ArXiv Paper Filter",
+    "version": "1.0",
+    "description": "Filter arXiv papers based on keywords",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://arxiv.org/list/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+}
+
+
